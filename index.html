@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Defender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hud">
+      <div class="brand">
+        <p class="eyebrow">Arcade Run</p>
+        <h1>Star Defender</h1>
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">Lives</span>
+          <strong id="lives">3</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">Wave</span>
+          <strong id="wave">1</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas-wrap">
+      <canvas id="gameCanvas" width="900" height="600" aria-label="Space shooter game"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="overlay-card">
+          <p class="eyebrow">Controls</p>
+          <h2 id="overlayTitle">Defend The Sector</h2>
+          <p id="overlayText">
+            Move with arrow keys or A/D, fire with Space, and survive each incoming wave.
+          </p>
+          <button id="startButton" type="button">Start Mission</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
